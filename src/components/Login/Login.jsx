@@ -29,7 +29,7 @@ const Login = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="content bg-red-400 h-full w-full text-center flex flex-col items-center rounded-r-[35%] justify-center py-8">
+        <div className="content bg-red-400 h-full w-full text-center hidden lg:flex flex-col items-center rounded-r-[35%] justify-center py-8">
           <h2 className="text-xl font-bold text-white">Welcome Back!</h2>
           <p className="text-white mb-4 mt-2 text-sm">
             Existing user? Log in here
