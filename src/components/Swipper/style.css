@@ -1,117 +1,112 @@
-#app { height: 100% }
-html,
-body {
-  position: relative;
+/* Global Styles */
+html, body {
   height: 100%;
-}
-
-body {
-  background: #eee;
+  margin: 0;
+  padding: 0;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
-  margin: 0;
-  padding: 0;
-}
-
-body {
   background: #fff;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
 }
 
-html,
-body {
-  position: relative;
-  height: 100%;
-}
-
+/* App Wrapper */
 #app {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100%;
+  padding: 10px; /* Added padding for better responsiveness */
 }
 
+/* Swiper - Initial styles */
 .swiper {
-    width: 480px;
-    height: 560px;
-  }
-  
-  /* For small screens (mobile devices) */
-  @media (max-width: 640px) {
-    .swiper {
-      width: 100%;
-      height: auto; /* Maintain aspect ratio */
-    }
-  }
-  
-  /* For medium screens (tablets) */
-  @media (min-width: 641px) and (max-width: 1024px) {
-    .swiper {
-      width: 80%; /* Adjust the width to 80% of the parent */
-      height: auto; /* Let the height adjust automatically */
-    }
-  }
-  
-  /* For large screens (desktop and above) */
-  @media (min-width: 1025px) {
-    .swiper {
-      width: 480px; /* Keep width fixed */
-      height: 560px; /* Keep height fixed */
-    }
-  }
-  
-  
+  width: 100%;
+  max-width: 480px;  /* Make sure it doesn't grow too wide */
+  height: 560px;
+  margin: 0 auto; /* Center the swiper on the page */
+  border-radius: 18px; /* Add rounded corners */
+  overflow: hidden; /* To keep the content inside the swiper contained */
+}
 
+/* For small screens (mobile devices) */
+@media (max-width: 640px) {
+  .swiper {
+    width: 50%;
+    height: 240px; /* Let height adjust automatically */
+  }
+}
+
+/* For medium screens (tablets) */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .swiper {
+    width: 60%; /* Adjust the width to 80% of the parent */
+    height: 320px; /* Let the height adjust automatically */
+  }
+}
+
+/* For large screens (desktop and above) */
+@media (min-width: 1025px) {
+  .swiper {
+    width: 480px; /* Keep width fixed */
+    height: 560px; /* Keep height fixed */
+  }
+}
+
+/* Swiper Slide */
 .swiper-slide {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 18px;
   font-size: 22px;
   font-weight: bold;
   color: #fff;
+  height: 100%; /* Ensure the slide takes full height */
+  text-align: center; /* Center text */
+  border-radius: 18px;
 }
 
+/* Slide Background Colors (rotating every nth slide) */
 .swiper-slide:nth-child(1n) {
-  background-color: rgb(206, 17, 17);
+  background-color: rgb(206, 17, 17); /* Red */
 }
 
 .swiper-slide:nth-child(2n) {
-  background-color: rgb(0, 140, 255);
+  background-color: rgb(0, 140, 255); /* Blue */
 }
 
 .swiper-slide:nth-child(3n) {
-  background-color: rgb(10, 184, 111);
+  background-color: rgb(10, 184, 111); /* Green */
 }
 
 .swiper-slide:nth-child(4n) {
-  background-color: rgb(211, 122, 7);
+  background-color: rgb(211, 122, 7); /* Orange */
 }
 
 .swiper-slide:nth-child(5n) {
-  background-color: rgb(118, 163, 12);
+  background-color: rgb(118, 163, 12); /* Olive Green */
 }
 
 .swiper-slide:nth-child(6n) {
-  background-color: rgb(180, 10, 47);
+  background-color: rgb(180, 10, 47); /* Red */
 }
 
 .swiper-slide:nth-child(7n) {
-  background-color: rgb(35, 99, 19);
+  background-color: rgb(35, 99, 19); /* Dark Green */
 }
 
 .swiper-slide:nth-child(8n) {
-  background-color: rgb(0, 68, 255);
+  background-color: rgb(0, 68, 255); /* Dark Blue */
 }
 
 .swiper-slide:nth-child(9n) {
-  background-color: rgb(218, 12, 218);
+  background-color: rgb(218, 12, 218); /* Purple */
 }
 
 .swiper-slide:nth-child(10n) {
-  background-color: rgb(54, 94, 77);
+  background-color: rgb(54, 94, 77); /* Dark Teal */
+}
+
+/* Optional: Add smooth transition effect for slides */
+.swiper-slide {
+  transition: background-color 0.3s ease-in-out;
 }
