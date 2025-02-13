@@ -6,7 +6,11 @@ export default {
   ],
   darkMode: 'class', // Enable dark mode via class
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        archivo: ["Archivo", "sans-serif" , "syne"], // Add Archivo font
+      },
+    },
   },
   plugins: [],
 }

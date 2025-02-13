@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer"
+import { Outlet } from "react-router-dom";
 const Layout = ({ children }) => {
   return (
     <div className="">
@@ -11,9 +12,9 @@ const Layout = ({ children }) => {
       </div>
 
       {/* Main content area */}
-      <div className="min-h-screen bg-gray-500 text-white">
+      <div className="min-h-screen">
         {/* Main content area: dynamic content */}
-        <main className="">{children}</main>
+        <main className=""><Outlet/></main>
       </div>
       <div className={``}>
         <Footer/>
