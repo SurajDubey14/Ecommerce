@@ -13,24 +13,27 @@ const Header = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <div className="flex items-center justify-between w-full p-4 text-xl">
+    <div className="flex items-center justify-between w-full px-4 pt-5 text-xl">
       {/* Logo */}
       <div className="text-2xl font-bold font-Syne">Clothio</div>
 
       {/* Links for larger screens */}
-      <nav className="hidden md:block">
+      <nav className="hidden md:block text-sm font-semibold">
         <ul className="flex items-center gap-x-5 w-full">
-          <NavLink to="/" className="hover:text-red-600">
+          <NavLink to="/" className="hover:text-gray-400">
             Home
           </NavLink>
-          <NavLink to="/collection" className="hover:text-red-600">
+          <NavLink to="/collection" className="hover:text-gray-400">
             Collection
           </NavLink>
-          <NavLink to="/contact" className="hover:text-red-600">
+          <NavLink to="/contact" className="hover:text-gray-400">
             Contact Us
           </NavLink>
-          <NavLink to="/track-order" className="hover:text-red-600">
+          <NavLink to="/track-order" className="hover:text-gray-400">
             Track your Order
+          </NavLink>
+          <NavLink to="/sale" className="hover:text-gray-400">
+            Sale
           </NavLink>
         </ul>
       </nav>
@@ -39,17 +42,17 @@ const Header = () => {
       <nav>
         <ul className="md:flex items-center gap-x-4 hidden">
           <li>
-            <NavLink to="" className="text-lg">
+            <NavLink to="" className="text-lg font-semibold">
               <IoIosSearch />
             </NavLink>
           </li>
           <li>
-            <NavLink to="/auth" className="text-lg">
+            <NavLink to="/auth" className="text-lg font-semibold">
               <MdPersonOutline />
             </NavLink>
           </li>
           <li>
-            <NavLink to="/listing" className="text-lg">
+            <NavLink to="/listing" className="text-lg font-semibold">
               <RiShoppingBagLine />
             </NavLink>
           </li>
@@ -67,26 +70,50 @@ const Header = () => {
           {/* Logo */}
           <div className="text-2xl font-bold font-Syne mb-10">Clothio</div>
           <ul className="flex flex-col items-start gap-y-6">
-            <NavLink to="/" className="text-lg" onClick={toggleMenu}>
+            <NavLink
+              to="/"
+              className="text-sm font-semibold"
+              onClick={toggleMenu}
+            >
               Home
             </NavLink>
-            <NavLink to="/collection" className="text-lg" onClick={toggleMenu}>
+            <NavLink
+              to="/collection"
+              className="text-sm font-semibold"
+              onClick={toggleMenu}
+            >
               Collection
             </NavLink>
-            <NavLink to="/contact" className="text-lg" onClick={toggleMenu}>
+            <NavLink
+              to="/contact"
+              className="text-sm font-semibold"
+              onClick={toggleMenu}
+            >
               Contact Us
             </NavLink>
-            <NavLink to="/track-order" className="text-lg" onClick={toggleMenu}>
+            <NavLink
+              to="/track-order"
+              className="text-sm font-semibold"
+              onClick={toggleMenu}
+            >
               Track your Order
             </NavLink>
             <li className="">
-              <NavLink to="/auth" onClick={toggleMenu} className={"items-center flex gap-x-2"}>
-                <MdPersonOutline size={34} /> Profile
+              <NavLink
+                to="/auth"
+                onClick={toggleMenu}
+                className={"items-center text-sm font-semibold flex gap-x-2"}
+              >
+                <MdPersonOutline size={20} /> Profile
               </NavLink>
             </li>
             <li>
-              <NavLink to="/listing" onClick={toggleMenu} className={"items-center flex gap-x-2"}>
-                <RiShoppingBagLine size={24} /> Cart
+              <NavLink
+                to="/listing"
+                onClick={toggleMenu}
+                className={"items-center flex gap-x-2"}
+              >
+                <RiShoppingBagLine size={20} /> Cart
               </NavLink>
             </li>
           </ul>

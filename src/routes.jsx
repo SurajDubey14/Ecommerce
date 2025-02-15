@@ -7,6 +7,8 @@ import Home from "./pages/Home/Home.jsx";
 import RegisterProcess from "./pages/RegisterProcess/RegisterProcess.jsx";
 import Login from "./components/Login/Login.jsx";
 import Signup from "./components/Signup/Signup.jsx";
+import TrackOrder from "./pages/TrackOrder/TrackOrder.jsx";
+import ContactUs from "./pages/ContactUs/ContactUs.jsx";
 
 const AppRoutes = () => {
   return (
@@ -14,6 +16,8 @@ const AppRoutes = () => {
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
+          <Route path="/track-order" element={<TrackOrder />} />
+          <Route path="/contact" element={<ContactUs />} />
         </Route>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Signup />} />
