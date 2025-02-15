@@ -11,7 +11,7 @@ const TrackOrder = () => {
   return (
     <>
       <div className="flex items-center justify-center px-4 py-10">
-        <div className="p-5 bg-white shadow-lg w-full max-w-[80%]">
+        <div className="p-5 bg-white shadow-lg w-full max-w-[95%] sm:max-w-[80%]">
           <div className="border-b pb-4 text-lg sm:text-2xl font-semibold flex items-center justify-center gap-x-4 sm:gap-x-2">
             <TfiPackage size={20} />
             <h1 className="text-gray-700">Track status of your shipment</h1>
