@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "../../components/Swipper/Slider";
+import Category from "../Category.jsx/Category";
 
 const Home = () => {
   return (
@@ -32,11 +33,20 @@ const Home = () => {
       </div>
 
       <div className="flex flex-col md:flex-row items-center justify-around gap-x-10 py-10 md:py-20 ">
-        <div className="text-2xl sm:text-3xl md:text-4xl font-semibold">
+        <div className="text-2xl sm:text-3xl md:text-4xl font-semibold font-serif">
           Our Gallery
         </div>
-        <div >
-          <Slider  />
+        <div>
+          <Slider />
+        </div>
+      </div>
+
+      <div className="category flex justify-center gap-x-10 w-full items-center">
+        <div>
+          <h1 className="text-4xl font-semibold font-serif">Category : </h1>
+        </div>
+        <div>
+          <Category />
         </div>
       </div>
     </>

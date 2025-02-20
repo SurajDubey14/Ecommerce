@@ -98,6 +98,13 @@ const Header = () => {
             >
               Track your Order
             </NavLink>
+            <NavLink
+              to="/sale"
+              className="text-sm font-semibold"
+              onClick={toggleMenu}
+            >
+              Sale
+            </NavLink>
             <li className="">
               <NavLink
                 to="/auth"
@@ -111,7 +118,7 @@ const Header = () => {
               <NavLink
                 to="/listing"
                 onClick={toggleMenu}
-                className={"items-center flex gap-x-2"}
+                className={"items-center text-sm font-semibold flex gap-x-2"}
               >
                 <RiShoppingBagLine size={20} /> Cart
               </NavLink>
