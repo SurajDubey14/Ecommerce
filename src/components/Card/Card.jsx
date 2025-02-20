@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Card = (props) => {
   return (
-    <div className="relative h-[500px] w-96 overflow-hidden group">
+    <div className="relative h-[400px] xl:h-[500px] w-80  xl:w-full overflow-hidden group">
       {/* Image with zoom effect on hover */}
       <img
         src={props.data.img}
@@ -15,7 +15,7 @@ const Card = (props) => {
       />
 
       {/* Text container with animation from bottom to top */}
-      <div className="absolute bottom-[-50px] left-1/2 transform -translate-x-1/2 flex gap-x-2 items-center bg-black p-2 rounded-md text-white justify-center max-w-fit transition-all duration-500 ease-in-out group-hover:bottom-5">
+      <div className="absolute bottom-[-50px] left-1/2 transform -translate-x-1/2 flex gap-x-2 items-center bg-black px-4 py-2 text-white justify-center max-w-fit transition-all duration-500 ease-in-out group-hover:bottom-5">
         <Link to={`/${props.data.link}`}>{props.data.title}</Link>
         <FaArrowRight />
       </div>

@@ -24,7 +24,7 @@ const Category = () => {
   ];
 
   return (
-    <div className="flex sm:flex-row flex-col items-center gap-x-10 p-10">
+    <div className="flex lg:flex-row  flex-col items-center gap-y-4 lg:gap-x-4 p-4 sm:p-5">
       {CardData.map((value) => (
         <Card key={value.id} data={value} />
       ))}
