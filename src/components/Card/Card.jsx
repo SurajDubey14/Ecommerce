@@ -1,21 +1,4 @@
-// import React from "react";
-// import { FaArrowRight } from "react-icons/fa";
-// import { Link } from "react-router-dom";
 
-// const Card = (props) => {
-//   return (
-//     <div className="flex justify-center items-center flex-col relative  h-[500px]">
-//       <img src={props.data.img} alt={props.data.title} className="w-96 h-full" />
-//       <div className="absolute bottom-5 flex gap-x-2 items-center bg-black p-2 rounded-md text-white justify-center max-w-fit">
-//         {/* Dynamic Link */}
-//         <Link to={`/${props.data.link}`}>{props.data.title}</Link>
-//         <FaArrowRight />
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Card;
 
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";

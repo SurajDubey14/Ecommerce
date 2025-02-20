@@ -18,7 +18,7 @@ const Header = () => {
       <div className="text-2xl font-bold font-Syne">Clothio</div>
 
       {/* Links for larger screens */}
-      <nav className="hidden md:block text-sm font-semibold">
+      <nav className="hidden md:block text-md font-semibold">
         <ul className="flex items-center gap-x-5 w-full">
           <NavLink to="/" className="hover:text-gray-400">
             Home
@@ -72,35 +72,35 @@ const Header = () => {
           <ul className="flex flex-col items-start gap-y-6">
             <NavLink
               to="/"
-              className="text-sm font-semibold"
+              className="text-md font-semibold"
               onClick={toggleMenu}
             >
               Home
             </NavLink>
             <NavLink
               to="/collection"
-              className="text-sm font-semibold"
+              className="text-md font-semibold"
               onClick={toggleMenu}
             >
               Collection
             </NavLink>
             <NavLink
               to="/contact"
-              className="text-sm font-semibold"
+              className="text-md font-semibold"
               onClick={toggleMenu}
             >
               Contact Us
             </NavLink>
             <NavLink
               to="/track-order"
-              className="text-sm font-semibold"
+              className="text-md font-semibold"
               onClick={toggleMenu}
             >
               Track your Order
             </NavLink>
             <NavLink
               to="/sale"
-              className="text-sm font-semibold"
+              className="text-md font-semibold"
               onClick={toggleMenu}
             >
               Sale
@@ -109,7 +109,7 @@ const Header = () => {
               <NavLink
                 to="/auth"
                 onClick={toggleMenu}
-                className={"items-center text-sm font-semibold flex gap-x-2"}
+                className={"items-center text-md font-semibold flex gap-x-2"}
               >
                 <MdPersonOutline size={20} /> Profile
               </NavLink>
@@ -118,7 +118,7 @@ const Header = () => {
               <NavLink
                 to="/listing"
                 onClick={toggleMenu}
-                className={"items-center text-sm font-semibold flex gap-x-2"}
+                className={"items-center text-md font-semibold flex gap-x-2"}
               >
                 <RiShoppingBagLine size={20} /> Cart
               </NavLink>
