@@ -15,7 +15,9 @@ const Header = () => {
   return (
     <div className="flex items-center justify-between w-full px-4 pt-5 text-xl">
       {/* Logo */}
-      <div className="text-2xl font-bold font-Syne">Clothio</div>
+      <NavLink to="/" className="text-2xl font-bold font-Syne">
+        Clothio
+      </NavLink>
 
       {/* Links for larger screens */}
       <nav className="hidden md:block text-md font-semibold">
@@ -40,20 +42,20 @@ const Header = () => {
 
       {/* Second nav for icons */}
       <nav>
-        <ul className="md:flex items-center gap-x-4 hidden">
+        <ul className="md:flex items-center gap-x-7 hidden">
           <li>
             <NavLink to="" className="text-lg font-semibold">
-              <IoIosSearch />
+              <IoIosSearch size={22} />
             </NavLink>
           </li>
           <li>
             <NavLink to="/auth" className="text-lg font-semibold">
-              <MdPersonOutline />
+              <MdPersonOutline size={22} />
             </NavLink>
           </li>
           <li>
             <NavLink to="/listing" className="text-lg font-semibold">
-              <RiShoppingBagLine />
+              <RiShoppingBagLine size={22} />
             </NavLink>
           </li>
         </ul>

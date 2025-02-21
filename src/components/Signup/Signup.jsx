@@ -24,12 +24,12 @@ const Signup = () => {
   return (
     <>
       <motion.div
-        className="flex justify-center bg-white w-full max-w-[50%] h-[60vh] shadow-2xl"
+        className="flex justify-center bg-white w-full sm:max-w-[50%] h-[60vh] p-5 sm:p-0 sm:shadow-2xl shadow-none"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="form bg-white p-8 flex flex-col flex-1 text-center justify-center space-y-2">
+        <div className="form bg-white p-5 sm:p-8 flex flex-col flex-1 text-center justify-center w-full sm:w-[50%] space-y-2">
           <h2>Sign In</h2>
           <form className="flex flex-col space-y-4" onSubmit={handleSubmit}>
             <div className="flex flex-col">
@@ -64,7 +64,7 @@ const Signup = () => {
             </button>
           </form>
         </div>
-        <div className="content bg-red-400 h-full w-full text-center hidden lg:flex flex-col items-center rounded-l-[35%] justify-center py-8">
+        <div className="content bg-red-400 h-full w-[50%]  text-center hidden lg:flex flex-col items-center rounded-l-[35%] justify-center py-8">
           <h2 className="text-xl font-bold text-white">Welcome Back!</h2>
           <p className="text-white mb-4 mt-2 text-sm">New User!! SignUp here</p>
           <button className="bg-blue-500 px-6 py-1 rounded-lg text-white font-semibold hover:bg-blue-400 transition duration-300">

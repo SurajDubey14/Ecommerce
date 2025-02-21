@@ -9,7 +9,7 @@ import Login from "./components/Login/Login.jsx";
 import Signup from "./components/Signup/Signup.jsx";
 import TrackOrder from "./pages/TrackOrder/TrackOrder.jsx";
 import ContactUs from "./pages/ContactUs/ContactUs.jsx";
-
+import Collection from "./pages/Collection/Collection.jsx";
 const AppRoutes = () => {
   return (
     <Router>
@@ -18,11 +18,13 @@ const AppRoutes = () => {
           <Route path="/" element={<Home />} />
           <Route path="/track-order" element={<TrackOrder />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/collection" element={<Collection />} />
         </Route>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Signup />} />
         <Route path="/auth" element={<RegisterProcess />} />
-        {/* <Route path="/collection" element={<Collection />} />
+
+        {/* 
           <Route path="/contact" element={<Contact />} />
           <Route path="/track-order" element={<TrackOrder />} /> */}
       </Routes>
