@@ -13,15 +13,15 @@ const Header = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <div className="flex items-center justify-between w-full px-4 pt-5 text-xl">
+    <div className="flex items-center justify-around w-full px-4 pt-5 text-xl">
       {/* Logo */}
-      <NavLink to="/" className="text-2xl font-bold font-Syne">
+      <NavLink to="/" className="text-4xl font-bold font-serif">
         Clothio
       </NavLink>
 
       {/* Links for larger screens */}
       <nav className="hidden md:block text-md font-semibold">
-        <ul className="flex items-center gap-x-5 w-full">
+        <ul className="flex items-center gap-x-10 w-full">
           <NavLink to="/" className="hover:text-gray-400">
             Home
           </NavLink>
@@ -34,9 +34,9 @@ const Header = () => {
           <NavLink to="/track-order" className="hover:text-gray-400">
             Track your Order
           </NavLink>
-          <NavLink to="/sale" className="hover:text-gray-400">
+          {/* <NavLink to="/sale" className="hover:text-gray-400">
             Sale
-          </NavLink>
+          </NavLink> */}
         </ul>
       </nav>
 
@@ -100,20 +100,20 @@ const Header = () => {
             >
               Track your Order
             </NavLink>
-            <NavLink
+            {/* <NavLink
               to="/sale"
               className="text-md font-semibold"
               onClick={toggleMenu}
             >
               Sale
-            </NavLink>
+            </NavLink> */}
             <li className="">
               <NavLink
                 to="/auth"
                 onClick={toggleMenu}
                 className={"items-center text-md font-semibold flex gap-x-2"}
               >
-                <MdPersonOutline size={20} /> Profile
+                <MdPersonOutline size={22} /> Profile
               </NavLink>
             </li>
             <li>
@@ -122,7 +122,7 @@ const Header = () => {
                 onClick={toggleMenu}
                 className={"items-center text-md font-semibold flex gap-x-2"}
               >
-                <RiShoppingBagLine size={20} /> Cart
+                <RiShoppingBagLine size={22} /> Cart
               </NavLink>
             </li>
           </ul>

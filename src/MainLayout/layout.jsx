@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
       </div>
 
       {/* Main content area */}
-      <div className="min-h-screen mt-4 bg-gray-100">
+      <div className="min-h-screen mt-4">
         {/* Main content area: dynamic content */}
         <main className=""><Outlet/></main>
       </div>

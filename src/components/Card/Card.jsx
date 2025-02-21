@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Card = (props) => {
   return (
-    <div className="relative h-[400px] xl:h-[500px] w-80  xl:w-full overflow-hidden group">
+    <div className="relative h-[400px] xl:h-[500px] w-80  xl:w-96 overflow-hidden group">
       {/* Image with zoom effect on hover */}
       <img
         src={props.data.img}

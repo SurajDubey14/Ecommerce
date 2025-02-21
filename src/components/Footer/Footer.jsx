@@ -8,7 +8,7 @@ import { RiInstagramFill } from "react-icons/ri";
 const Footer = () => {
   return (
     <>
-      <div className="w-full bg-gray-100 ">
+      <div className="w-full">
         <div className="w-full lg:rounded-tr-[34%] text-white bg-[#171717] p-12">
           {/* Top footer */}
           <div className="pb-12">
