@@ -13,7 +13,7 @@ const Header = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <div className="flex items-center justify-around w-full px-4 pt-5 text-xl">
+    <div className="flex items-center justify-between sm:justify-around w-full px-4 pt-5 text-xl">
       {/* Logo */}
       <NavLink to="/" className="text-4xl font-bold font-serif">
         Clothio
