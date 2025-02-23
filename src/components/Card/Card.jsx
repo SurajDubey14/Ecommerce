@@ -16,7 +16,7 @@ const Card = (props) => {
 
       {/* Text container with animation from bottom to top */}
       <div className="absolute bottom-[-50px] left-1/2 transform -translate-x-1/2 flex gap-x-2 items-center bg-black px-4 py-2 text-white justify-center max-w-fit transition-all duration-500 ease-in-out group-hover:bottom-5">
-        <Link to={`/${props.data.link}`}>{props.data.title}</Link>
+        <Link to={`/listing/${props.data.link}`}>{props.data.title}</Link>
         <FaArrowRight />
       </div>
     </div>

@@ -10,6 +10,8 @@ import Signup from "./components/Signup/Signup.jsx";
 import TrackOrder from "./pages/TrackOrder/TrackOrder.jsx";
 import ContactUs from "./pages/ContactUs/ContactUs.jsx";
 import Collection from "./pages/Collection/Collection.jsx";
+import Listing from "./pages/Listing/Listing.jsx";
+
 const AppRoutes = () => {
   return (
     <Router>
@@ -19,6 +21,8 @@ const AppRoutes = () => {
           <Route path="/track-order" element={<TrackOrder />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/collection" element={<Collection />} />
+          
+          <Route path="/listing/:id" element={<Listing />} />
         </Route>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Signup />} />
