@@ -32,15 +32,15 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row items-center justify-around gap-x-10 py-10 md:py-20 ">
+      {/* <div className="flex flex-col md:flex-row items-center justify-around gap-x-10 py-10 md:py-20 ">
         <div className="text-2xl sm:text-3xl md:text-4xl font-semibold font-serif">
           Our Gallery
         </div>
         <div>
           <p className="text-7xl font bold">Slider</p>
-          {/* <Slider /> */}
+          <Slider />
         </div>
-      </div>
+      </div> */}
 
       <div className="category flex xl:flex-row flex-col justify-center gap-x-10 w-full items-center sm:py-2 py-10">
         <div >

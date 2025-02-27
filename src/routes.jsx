@@ -11,6 +11,7 @@ import TrackOrder from "./pages/TrackOrder/TrackOrder.jsx";
 import ContactUs from "./pages/ContactUs/ContactUs.jsx";
 import Collection from "./pages/Collection/Collection.jsx";
 import Listing from "./pages/Listing/Listing.jsx";
+import BuyNow from "./pages/BuyNow/BuyNow.jsx";
 
 const AppRoutes = () => {
   return (
@@ -21,7 +22,7 @@ const AppRoutes = () => {
           <Route path="/track-order" element={<TrackOrder />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/collection" element={<Collection />} />
-          
+          <Route path="/buynow/:id" element={<BuyNow />} />
           <Route path="/listing/:id" element={<Listing />} />
         </Route>
         <Route path="/login" element={<Login />} />
