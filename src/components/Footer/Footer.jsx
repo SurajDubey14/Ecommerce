@@ -4,6 +4,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import { FaFacebookF } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -26,32 +27,62 @@ const Footer = () => {
           </div>
 
           {/* Divider line */}
-          <p className="border-b-2 border-white mb-8"></p>
+          
 
           {/* Footer links */}
-          <div className="flex flex-wrap justify-between gap-y-8 md:gap-y-0 md:flex-row">
-            {["Men", "Women", "Children"].map((section, idx) => (
-              <div key={idx} className="flex flex-col w-full md:w-auto">
-                <p className="font-roboto text-lg font-semibold pb-4 text-center md:text-left">
-                  Customer Support
-                </p>
-                <ul className="space-y-2 text-center md:text-left">
-                  {["Men", "Women", "Children"].map((item, index) => (
-                    <li key={index}>
-                      <a href="#" className="text-white hover:underline">
-                        {item}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+          <div className="flex py-10 flex-wrap justify-start sm:gap-x-[100px] items-left gap-y-8 md:gap-y-0 md:flex-row">
+            <div>
+              <h1 className="font-semibold text-2xl font-serif uppercase">
+                QUICK LINKS
+              </h1>
+
+              <ul className="flex flex-col mt-4">
+                <li>
+                  <Link href="#" className="text-white hover:underline">
+                    Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="text-white hover:underline">
+                    Returns & Shipping Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="text-white hover:underline">
+                    Terms & Conditions
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h1 className="font-semibold text-2xl font-serif uppercase">
+                CONNECT WITH US
+              </h1>
+
+              <ul className="flex flex-col mt-4">
+                <li>
+                  <Link href="#" className="text-white hover:underline">
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="text-white hover:underline">
+                   Contact Us
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="text-white hover:underline">
+                    Track Your Order
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
 
           {/* Divider line */}
-          <p className="border-b-2 border-white mt-8 mb-8"></p>
+         
 
-          <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col md:flex-row justify-between items-center mt-10">
             {/* Social Media and Copyright */}
             <div className="flex flex-col md:flex-row items-center gap-x-5 mb-6 md:mb-0">
               <div className="flex items-center text-lg font-semibold mb-4 md:mb-0">
