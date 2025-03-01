@@ -12,7 +12,7 @@ const Purchase = (props) => {
               className="w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-110"
             />
           </div>
-          <div className="flex flex-col w-full xl:w-[80%] bg-white drop-shadow-2xl rounded-lg h-fit p-6 xl:p-10">
+          <div className="flex flex-col w-full xl:w-96 bg-white drop-shadow-2xl rounded-lg h-fit p-6 xl:p-10">
             <p className="font-semibold text-xl font-sans">{props.desc}</p>
             <div className="flex items-center text-lg gap-x-5">
               <p className="font-semibold">&#8377;{props.price}</p>

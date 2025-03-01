@@ -1,7 +1,14 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 
-const Signup = () => {
+const Signup = ({ toggleForm }) => {
+  const handleSignupSubmit = (e) => {
+    e.preventDefault();
+    // Perform signup logic here
+
+    // Example: After successful signup, you can toggle to the login form if needed
+    // toggleForm();
+  };
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -64,10 +71,13 @@ const Signup = () => {
             </button>
           </form>
         </div>
-        <div className="content bg-red-400 h-full w-[50%]  text-center hidden lg:flex flex-col items-center rounded-l-[35%] justify-center py-8">
+        <div className="content bg-orange-500 h-full w-[50%]  text-center hidden lg:flex flex-col items-center rounded-l-[35%] justify-center py-8">
           <h2 className="text-xl font-bold text-white">Welcome Back!</h2>
           <p className="text-white mb-4 mt-2 text-sm">New User!! SignUp here</p>
-          <button className="bg-blue-500 px-6 py-1 rounded-lg text-white font-semibold hover:bg-blue-400 transition duration-300">
+          <button
+            onClick={toggleForm}
+            className="bg-blue-500 px-6 py-1 rounded-lg text-white font-semibold hover:bg-blue-400 transition duration-300"
+          >
             Signup
           </button>
         </div>

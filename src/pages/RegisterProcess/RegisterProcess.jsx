@@ -10,17 +10,14 @@ const RegisterProcess = () => {
   };
 
   return (
-    <>
-      <div className="flex items-center justify-center min-h-screen flex-col">
-        {isLogin ? <Login /> : <Signup />}
-        <button
-          onClick={toggleForm}
-          className="mt-5 bg-[#171717] text-white px-4 py-1 rounded-sm shadow-lg"
-        >
-          {isLogin ? "Signup" : "Login"}
-        </button>
-      </div>
-    </>
+    <div className="flex items-center justify-center min-h-screen flex-col">
+      {/* Pass the toggleForm function as a prop to the Login and Signup components */}
+      {isLogin ? (
+        <Login toggleForm={toggleForm} />
+      ) : (
+        <Signup toggleForm={toggleForm} />
+      )}
+    </div>
   );
 };
 
