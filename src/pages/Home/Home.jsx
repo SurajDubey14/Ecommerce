@@ -36,7 +36,7 @@ const Home = () => {
         <div className="text-2xl sm:text-3xl md:text-4xl font-semibold font-serif">
           Our Gallery
         </div>
-        <div className="p-4 mt-5 sm:p-0 sm:mt-0">
+        <div className="p-3 mt-5 sm:p-0 sm:mt-0">
           <Slider />
         </div>
       </div>

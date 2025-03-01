@@ -15,7 +15,7 @@ const RegisterProcess = () => {
         <button
           type="button"
           onClick={toggleForm}
-          className="lg:hidden block mb-4 px-4 py-2 bg-orange-500 text-white rounded"
+          className="lg:hidden block px-4 py-2 border-2 border-black font-semibold font-serifshadow-2xl  rounded"
         >
           {isLogin ? "Sign Up" : "Login"}
         </button>

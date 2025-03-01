@@ -31,15 +31,15 @@ html, body {
 /* For small screens (mobile devices) */
 @media (max-width: 640px) {
   .swiper {
-    width: 50%;
-    height: 240px; /* Let height adjust automatically */
+    width: 60%;
+    height: 320px; /* Let height adjust automatically */
   }
 }
 
 /* For medium screens (tablets) */
 @media (min-width: 641px) and (max-width: 1024px) {
   .swiper {
-    width: 60%; /* Adjust the width to 80% of the parent */
+    width: 55%; /* Adjust the width to 80% of the parent */
     height: 320px; /* Let the height adjust automatically */
   }
 }
